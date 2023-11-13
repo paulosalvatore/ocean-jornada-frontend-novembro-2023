@@ -5,6 +5,7 @@
   text-align: center;
   background: #f8f8f8;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -14,6 +15,7 @@
 
 .card > h2 {
   font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  border-left: 0.5rem solid #97d7d7;
 }
 
 .card > img {
