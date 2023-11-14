@@ -12,6 +12,6 @@ export default function Card(props) {
         return <Tag text={element} />
       })}
     </div>
-    <img src={item.imageUrl} />
+    <img src={item.image} />
   </div>
 }
