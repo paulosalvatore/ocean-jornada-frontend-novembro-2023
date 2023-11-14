@@ -1,4 +1,5 @@
 import './App.css'
+import Card from './components/Card/Card';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" />
       </div>
       <br />
+      <Card />
     </>
   )
 }
