@@ -1,3 +1,10 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
 .card {
   border: 0.1rem solid black;
   border-radius: 1rem;
@@ -6,6 +13,7 @@
   background: #f8f8f8;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
+  width: 20rem;
 }
 
 .card:hover {

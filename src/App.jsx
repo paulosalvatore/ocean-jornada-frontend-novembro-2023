@@ -23,9 +23,11 @@ function App() {
 
   return (
     <>
-      {items.map(function (element) {
-        return <Card item={element} />
-      })}
+      <div className="cards">
+        {items.map(function (element) {
+          return <Card item={element} />
+        })}
+      </div>
     </>
   )
 }
