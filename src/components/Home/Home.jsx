@@ -13,6 +13,7 @@ export default function Home() {
 
     const results = body.results.map(function (element) {
       return {
+        id: element.id,
         name: element.name,
         image: element.image,
         tags: [
