@@ -19,7 +19,8 @@ function App() {
         tags: [
           `Status: ${element.status}`,
           `Species: ${element.species}`,
-          `Origin: ${element.origin.name}`
+          `Origin: ${element.origin.name}`,
+          `Episodes: ${element.episode.length}`
         ]
       }
     })
