@@ -32,7 +32,19 @@ function App() {
 
     const body = await response.json()
 
-    setItems(body.results)
+    const results = body.results.map(function (element) {
+      return {
+        name: element.name,
+        image: element.image,
+        tags: [
+          `Status: ${element.status}`,
+          `Species: ${element.species}`,
+          `Origin: ${element.origin.name}`
+        ]
+      }
+    })
+
+    setItems(results)
   }
 
   useEffect(function () {
