@@ -21,11 +21,39 @@ export default function ReadById() {
     // TODO: Guardar a informação recebida da API em um estado
   }
 
-  useEffect(function() {
+  useEffect(function () {
     carregarDadosApi()
   }, [])
 
   // TODO: Exibir essas informações no JSX
 
-  return <div>ReadById: {id} - {item.name}</div>
+  // return <div>ReadById: {id} - {item.name}</div>
+
+  return (
+    <div className="image-wrapper">
+      <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez" className="character-image" />
+      <div className="character-info">
+        <div className="status-tag">Alive</div>
+        <h2 className="character-name">Rick Sanchez</h2>
+        <div className="character-details">
+          <div className="detail-item">
+            <span className="detail-title">Species</span>
+            <span className="detail">Human</span>
+          </div>
+          <div className="detail-item">
+            <span className="detail-title">Gender</span>
+            <span className="detail">Male</span>
+          </div>
+          <div className="detail-item">
+            <span className="detail-title">Origin</span>
+            <span className="detail">Earth (C-137)</span>
+          </div>
+          <div className="detail-item">
+            <span className="detail-title">Location</span>
+            <span className="detail">Citadel of Ricks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
