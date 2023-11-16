@@ -14,14 +14,9 @@ export default function ReadById() {
     const body = await response.json()
 
     setItem(body)
-
-    console.log(body)
-
-    // TODO: Implementar o carregamento da API
-    // TODO: Guardar a informação recebida da API em um estado
   }
 
-  useEffect(function() {
+  useEffect(function () {
     carregarDadosApi()
   }, [])
 
