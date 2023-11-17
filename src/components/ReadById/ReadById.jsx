@@ -21,43 +21,39 @@ export default function ReadById() {
     carregarDadosApi()
   }, [])
 
-  // TODO: Exibir essas informações no JSX
-
-  // return <div>ReadById: {id} - {item.name}</div>
-
   return (
     <div className="main">
       <div className="image-wrapper">
-        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Imagem do Personagem" />
+        <img src={item.image} alt="Imagem do Personagem" />
       </div>
 
       <div className="info">
         <div className="info-tag">
-          Status: Alive
+          Status: {item.status}
         </div>
 
         <h1 className="info-title">
-          Rick Sanchez
+          {item.name}
         </h1>
 
         <div className="info-row">
           <div className="info-label">Species:</div>
-          <div className="info-text">Human</div>
+          <div className="info-text">{item.species}</div>
         </div>
 
         <div className="info-row">
           <div className="info-label">Gender:</div>
-          <div className="info-text">Male</div>
+          <div className="info-text">{item.gender}</div>
         </div>
 
         <div className="info-row">
           <div className="info-label">Origin:</div>
-          <div className="info-text">Earth (C-137)</div>
+          <div className="info-text">{item.origin?.name}</div>
         </div>
 
         <div className="info-row">
           <div className="info-label">Location:</div>
-          <div className="info-text">Citadel of Ricks</div>
+          <div className="info-text">{item.location?.name}</div>
         </div>
       </div>
     </div>
