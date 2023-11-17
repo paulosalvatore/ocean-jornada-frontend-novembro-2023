@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import "./ReadById.css"
 
 export default function ReadById() {
   const { id } = useParams()
@@ -31,9 +32,13 @@ export default function ReadById() {
       </div>
 
       <div className="info">
-        <div className="info-tag">Status: Alive</div>
+        <div className="info-tag">
+          Status: Alive
+        </div>
 
-        <div className="info-title">Rick Sanchez</div>
+        <h1 className="info-title">
+          Rick Sanchez
+        </h1>
 
         <div className="info-row">
           <div className="info-label">Species:</div>
